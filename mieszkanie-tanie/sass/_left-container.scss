@@ -1,0 +1,155 @@
+div.leftContainer {
+	float: left;
+	width: $leftContainer;
+	height: ($backgroundHeight) - 110px;
+	background-color: #FFF;
+	margin-top: 107px;
+	position: relative;
+	border-top-left-radius: 10px;
+	img.logo {
+		width: ($backgroundWidth) - ($rightContainer) - 180px;
+		position: absolute;
+		top: -107px;
+		left: 20px;
+		float: right;
+	}
+	div.leftLeftContainer {
+		float: left;
+		clear: both;
+		width: 190px;
+		padding: 20px;
+		a.login {
+			text-decoration: none;
+			position: relative;
+			color: $darkGrey;
+			font-size: 12px;
+			font-weight: bold;
+			padding-left: 30px;
+			&:first-child {
+				margin-right: 20px;
+			}
+			img {
+				width: 30px;
+				position: absolute;
+				left: -10px;
+				top: -5px;
+			}
+		}
+		ul.leftMenu {
+			display: block;
+			width: 100%;
+			list-style: none;
+			margin-top: 20px;
+			padding: 0;
+			border-radius: 10px;
+			font-size: 12px;
+			font-weight: bold;
+			color: $darkFont;
+			span {
+				display: block;
+				background-color: #e2e8ec;
+				border-top-right-radius: 10px;
+				border-top-left-radius: 10px;
+				width: 170px;
+				height: 40px;
+				line-height: 40px;
+				padding-left: 20px;
+			}
+			a {
+				display: block;
+				background-color: $blueGrey;
+				border-bottom: 1px ridge $backgroundColor;
+				color: $darkFont;
+				text-decoration: none; 
+				line-height: 40px;
+				padding-left: 20px;
+				&:hover {
+					background-color: #e2e8ec;
+				}
+				&:last-child {
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+				}
+				li {
+					height: 40px;
+					width: 170px;
+					margin-top: 1px;
+				}
+			}	
+		}
+		div.topTags {
+			display: block;
+			width: 150px;
+			margin-top: 20px;
+			border-radius: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: $lightBlue;
+			padding: 20px;
+			box-shadow: 0 0 5px 2px $mainBlue;
+			height: 300px;
+			hr {
+				margin-top: 140px;
+				opacity: 0.5;
+			}
+			span.header {
+				font-weight: 600;
+				margin-top: 10px;
+				float: left;
+				font-size: 12px;
+				color: $mainBlue;
+			}
+			span.cont {
+				margin-top: 10px;
+				float: left;
+				font-size: 12px;
+				color: $darkFont;
+			}
+		}
+		div.survey {
+			@extend.topTags;
+			height: 350px;
+			span.surveyObjects {
+				margin-top: 10px;
+				float: left;
+				font-size: 12px;
+				color: $darkFont;
+				&:nth-child(2) {
+					margin-top: 20px;
+				}
+			} 
+			img {
+				margin-top: 5px;
+				width: 102%;
+			}
+		}
+		a.advert {
+			display: block;
+			width: 120px;
+			font-size: 14px;
+			font-weight: 600;
+			position: relative;
+			padding-left: 70px;
+			height: 50px;
+			background-color: $blueGrey;
+			border-radius: 10px;
+			margin-top: 8px;
+			padding-top: 10px;
+			text-decoration: none;
+			color: $darkFont;
+			box-shadow: 0 1px 1px 1px #BADBCD;
+			&:hover {
+				box-shadow: 0 1px 5px 5px #BADBCD;
+			}
+			&:nth-child(6) {
+				margin-top: 20px;
+			}
+			img {
+				position: absolute;
+				width: 45px;
+				left: 10px;
+				top: 5px;
+			} 
+		}
+	}
+}
